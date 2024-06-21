@@ -54,7 +54,6 @@ Este sistema de gestión universitaria está desarrollado en Python utilizando l
 - **Legajo**: Campo para ingresar el legajo del estudiante.
 - **Alumno**: Campo para ingresar el nombre del estudiante.
 - **Email**: Campo para ingresar el correo electrónico del estudiante.
-- **Calificación**: Campo para ingresar la calificación del estudiante.
 - **Carrera**: Campo para ingresar la carrera del estudiante.
 - **Localidad**: Campo para ingresar la localidad del estudiante.
 - **Provincia**: Campo para ingresar la provincia del estudiante.
