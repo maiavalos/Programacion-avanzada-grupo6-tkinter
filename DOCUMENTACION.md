@@ -1,4 +1,4 @@
-# 📚 UNaB - Sistema de Gestión de Informacion Academica  📚
+# 📚 UNaB - Sistema - Gestión de Informacion Academica  📚
 
 Bienvenido al sistema de gestión de Informacion Academica (UNaB). Esta aplicación facilita la gestión de estudiantes, incluyendo el registro de legajos, alumnos, correos electrónicos, carreras, localidades y provincias.
 
@@ -99,4 +99,4 @@ Este sistema de gestión universitaria está desarrollado en Python utilizando l
 
 ---
 
-¡Gracias por usar el Sistema - Gestión de Informacion Academica  UNaB! 📚✨
+¡Gracias por usar el Sistema - Gestión de Informacion Academica ! 📚✨
