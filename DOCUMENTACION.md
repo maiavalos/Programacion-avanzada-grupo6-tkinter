@@ -12,7 +12,7 @@ Bienvenido al sistema de gestión de Informacion Academica (UNaB). Esta aplicaci
 - [Descripción de Funcionalidades](#descripción-de-funcionalidades)
 - [Guía de Uso](#guía-de-uso)
 - [Contribuciones](#contribuciones)
-- [Autores](#autores)
+- [Alumnos](#alumnos)
   
 
 ## Introducción
@@ -79,17 +79,9 @@ Este sistema de gestión universitaria está desarrollado en Python utilizando l
    - **Actualizar**: Ingresa el legajo, modifica los datos y presiona **Actualizar** para guardar los cambios.
    - **Borrar**: Ingresa el legajo y presiona **Borrar** para eliminar el registro del estudiante.
 
-## Contribuciones
 
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar este proyecto, sigue estos pasos:
 
-1. Haz un fork del proyecto.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commits (`git commit -am 'Agrega nueva funcionalidad'`).
-4. Envía tus cambios (`git push origin feature/nueva-funcionalidad`).
-5. Abre un Pull Request.
-
-## Autores
+## Alumnos
 
 - **Avalos**
 - **Pérez Veltri**
