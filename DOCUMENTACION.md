@@ -2,7 +2,7 @@
 
 Bienvenido al sistema de gestión de Informacion Academica (UNaB). Esta aplicación facilita la gestión de estudiantes, incluyendo el registro de legajos, alumnos, correos electrónicos, carreras, localidades y provincias.
 
-![UNaB](https://via.placeholder.com/1000x100?text=Sistema+.+Gestión+de+Informacion+Academica)
+![UNaB](https://via.placeholder.com/1000x200?text=Sistema+-+Gestión+de+Informacion+Academica)
 
 ## Índice
 
@@ -32,7 +32,7 @@ Este sistema de gestión universitaria está desarrollado en Python utilizando l
 3. Ejecuta el archivo principal de la aplicación:
 
     ```sh
-    python Sistema de Gestión de Legajos UNaB.py
+    python Sistema de Gestión de Informacion Academica.py
 
 
 
@@ -99,4 +99,4 @@ Este sistema de gestión universitaria está desarrollado en Python utilizando l
 
 ---
 
-¡Gracias por usar el Sistema de Gestión Universitaria Legajos  UNaB! 📚✨
+¡Gracias por usar el Sistema - Gestión de Informacion Academica  UNaB! 📚✨
