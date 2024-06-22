@@ -13,7 +13,7 @@ Bienvenido al sistema de gestión de Informacion Academica (UNaB). Esta aplicaci
 - [Guía de Uso](#guía-de-uso)
 - [Contribuciones](#contribuciones)
 - [Autores](#autores)
-- [Licencia](#licencia)
+  
 
 ## Introducción
 
