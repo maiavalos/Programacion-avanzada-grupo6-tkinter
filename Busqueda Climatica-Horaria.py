@@ -106,13 +106,13 @@ text1 = Label(ventana, text="Bucar Continente/País/Ciudad/Localidad:", font=("u
 text1.place(relx=0.5, rely=0.06, anchor="center")
 
 buscar_ciudad = Entry(ventana, font = ("Courier New", 20, "bold"), relief="flat", highlightbackground="black", highlightthickness=3, justify= "center", bg="white", fg="black")
-buscar_ciudad.place(relx=0.5, rely=0.11, width=300, height=30, anchor="center")
+buscar_ciudad.place(relx=0.5, rely=0.11, width=300, height=35, anchor="center")
 buscar_ciudad.focus()
 
 
 # """ Botón Buscar """
 obtener_clima = Button(ventana, text="Buscar", bg="pink", cursor="hand2", command=lambda:clima_App(buscar_ciudad.get()))
-obtener_clima.place(relx=0.68, rely=0.11, width=50, height=30, anchor="center")
+obtener_clima.place(relx=0.68, rely=0.11, width=50, height=35, anchor="center")
 
 
 # """ PONER OTRO FONDO """
