@@ -10,7 +10,6 @@ class ContadorApp:
         self.label = tk.Label(root, text=self.contador, font=("Helvetica", 24))
         self.label.pack(pady=20)
 
-        # Botones para sumar, restar y reiniciar con tamaño más grande
         self.btn_sumar = tk.Button(root, text="+", font=("Helvetica", 18), command=self.sumar, padx=20, pady=10)
         self.btn_sumar.pack(side=tk.LEFT, padx=10)
 
