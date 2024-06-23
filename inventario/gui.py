@@ -28,93 +28,80 @@ class InventoryApp(tk.Frame):
             messagebox.showerror("Error", "Por favor ingrese el nombre y la cantidad del producto.")
 
     def create_widgets(self):
-        # Crear pestañas para organizar las funcionalidades
         self.notebook = ttk.Notebook(self.master)
         self.notebook.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
 
-        # Pestaña para agregar productos
         self.tab_add = tk.Frame(self.notebook)
         self.notebook.add(self.tab_add, text="Agregar Producto")
         self.create_add_widgets()
 
-        # Pestaña para modificar productos
         self.tab_modify = tk.Frame(self.notebook)
         self.notebook.add(self.tab_modify, text="Modificar Producto")
         self.create_modify_widgets()
 
-        # Pestaña para eliminar productos
         self.tab_remove = tk.Frame(self.notebook)
         self.notebook.add(self.tab_remove, text="Eliminar Producto")
         self.create_remove_widgets()
 
-        # Pestaña para buscar productos
         self.tab_search = tk.Frame(self.notebook)
         self.notebook.add(self.tab_search, text="Buscar Producto")
         self.create_search_widgets()
 
-        # Pestaña para mostrar inventario
         self.tab_show = tk.Frame(self.notebook)
         self.notebook.add(self.tab_show, text="Mostrar Inventario")
         self.create_show_widgets()
 
     def create_add_widgets(self):
-        # Etiqueta y campo de texto para ingresar el nombre del producto a agregar
+
         self.label_name_add = tk.Label(self.tab_add, text="Nombre del Producto:")
         self.label_name_add.pack(pady=5)
         self.entry_name_add = tk.Entry(self.tab_add)
         self.entry_name_add.pack(pady=5)
 
-        # Etiqueta y campo de texto para ingresar la cantidad del producto a agregar
+    
         self.label_quantity_add = tk.Label(self.tab_add, text="Cantidad:")
         self.label_quantity_add.pack(pady=5)
         self.entry_quantity_add = tk.Entry(self.tab_add)
         self.entry_quantity_add.pack(pady=5)
 
-        # Botón para agregar un producto al inventario
+        
         self.button_add = tk.Button(self.tab_add, text="Agregar Producto", command=self.add_product)
         self.button_add.pack(pady=10)
 
     def create_modify_widgets(self):
-        # Etiqueta y campo de texto para ingresar el nombre del producto a modificar
         self.label_name_modify = tk.Label(self.tab_modify, text="Nombre del Producto:")
         self.label_name_modify.pack(pady=5)
         self.entry_name_modify = tk.Entry(self.tab_modify)
         self.entry_name_modify.pack(pady=5)
 
-        # Etiqueta y campo de texto para ingresar la nueva cantidad del producto
         self.label_quantity_modify = tk.Label(self.tab_modify, text="Nueva Cantidad:")
         self.label_quantity_modify.pack(pady=5)
         self.entry_quantity_modify = tk.Entry(self.tab_modify)
         self.entry_quantity_modify.pack(pady=5)
 
-        # Botón para modificar la cantidad de un producto en el inventario
         self.button_modify = tk.Button(self.tab_modify, text="Modificar Cantidad", command=self.modify_quantity)
         self.button_modify.pack(pady=10)
 
     def create_remove_widgets(self):
-        # Etiqueta y campo de texto para ingresar el nombre del producto a eliminar
         self.label_name_remove = tk.Label(self.tab_remove, text="Nombre del Producto:")
         self.label_name_remove.pack(pady=5)
         self.entry_name_remove = tk.Entry(self.tab_remove)
         self.entry_name_remove.pack(pady=5)
 
-        # Botón para eliminar un producto del inventario
         self.button_remove = tk.Button(self.tab_remove, text="Eliminar Producto", command=self.remove_product)
         self.button_remove.pack(pady=10)
 
     def create_search_widgets(self):
-        # Etiqueta y campo de texto para ingresar el término de búsqueda
         self.label_search = tk.Label(self.tab_search, text="Buscar Producto:")
         self.label_search.pack(pady=5)
         self.entry_search = tk.Entry(self.tab_search)
         self.entry_search.pack(pady=5)
 
-        # Botón para buscar un producto en el inventario
+   
         self.button_search = tk.Button(self.tab_search, text="Buscar", command=self.search_product)
         self.button_search.pack(pady=10)
 
     def create_show_widgets(self):
-        # Botón para mostrar el inventario completo
         self.button_show = tk.Button(self.tab_show, text="Mostrar Inventario", command=self.show_inventory)
         self.button_show.pack(pady=10)
 
