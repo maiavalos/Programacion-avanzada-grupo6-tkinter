@@ -21,7 +21,7 @@ Este sistema de gestión universitaria está desarrollado en Python utilizando l
 
 ## Instalación
 
-1. Asegúrate de tener [Python 3.x](https://www.python.org/downloads/) instalado en tu sistema.
+1. Asegúrate de tener [Python 3.x](https://www.python.org/downloads/) instalado en tu sistema, y el modulo request.
 2. Clona este repositorio o descarga el archivo ZIP:
 
     ```sh
