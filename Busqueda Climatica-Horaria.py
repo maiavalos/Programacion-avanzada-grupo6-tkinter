@@ -45,7 +45,7 @@ def mostrar_labels():
     descrip_clima_text.place(x=20, y=305)
 
 
-    zona_horaria.place(x=730, y=220)
+    zona_horaria.place(x=753, y=220)
     zona_horaria_text.place(x=790, y=180)
 
 
