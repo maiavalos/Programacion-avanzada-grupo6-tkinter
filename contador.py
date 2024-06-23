@@ -34,6 +34,11 @@ class ContadorApp:
     def actualizar_label(self):
         self.label.config(text=self.contador)
 
+frame_copy = tk.Frame(root)
+frame_copy.grid(row=5, column=0, padx=10, pady=10, sticky="ew")
+etiqueta_copy = tk.Label(frame_copy, text=" Prog. Avanzada / Prof. Felipe Morales / Alumnos: Avalos - Pérez Veltri - Euler ")
+etiqueta_copy.grid(row=0, column=0, sticky="e")
+
 if __name__ == "__main__":
     root = tk.Tk()
     app = ContadorApp(root)
