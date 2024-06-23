@@ -35,7 +35,7 @@ Este sistema de gestión universitaria está desarrollado en Python utilizando l
 ## Descripción del Proyecto
 
 A través de este servicio podremos acceder fácilmente tanto al clima como la hora actual de cada Continente, País, Provincia, Ciudad, etc... que nosotros queramos conocer.
-### Podremos obtener los siguientes resultados:
+#### Podremos obtener los siguientes resultados:
  - Temperatura actual del lugar en °C .
  - Descripción del clima actual del lugar.
  - Hora actual del lugar.
