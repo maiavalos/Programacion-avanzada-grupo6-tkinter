@@ -7,17 +7,26 @@ class ContadorApp:
 
         self.contador = 0
 
-        self.label = tk.Label(root, text=self.contador, font=("Helvetica", 24))
-        self.label.pack(pady=20)
+        
+        self.marco_principal = tk.Frame(root)
+        self.marco_principal.pack(pady=20)
 
-        self.btn_sumar = tk.Button(root, text="+", font=("Helvetica", 18), command=self.sumar, padx=20, pady=10)
+        
+        self.label = tk.Label(self.marco_principal, text=self.contador, font=("Helvetica", 24))
+        self.label.pack()
+
+       
+        self.btn_sumar = tk.Button(self.marco_principal, text="+", font=("Helvetica", 18), command=self.sumar, padx=20, pady=10)
         self.btn_sumar.pack(side=tk.LEFT, padx=10)
 
-        self.btn_restar = tk.Button(root, text="-", font=("Helvetica", 18), command=self.restar, padx=20, pady=10)
+        self.btn_restar = tk.Button(self.marco_principal, text="-", font=("Helvetica", 18), command=self.restar, padx=20, pady=10)
         self.btn_restar.pack(side=tk.LEFT, padx=10)
 
-        self.btn_reiniciar = tk.Button(root, text="Reiniciar", font=("Helvetica", 18), command=self.reiniciar, padx=20, pady=10)
+        self.btn_reiniciar = tk.Button(self.marco_principal, text="Reiniciar", font=("Helvetica", 18), command=self.reiniciar, padx=20, pady=10)
         self.btn_reiniciar.pack(side=tk.LEFT, padx=10)
+
+        self.label_info = tk.Label(root, text="Prog. Avanzada / Prof. Felipe Morales / Alumnos: Avalos - Pérez Veltri - Euler", font=("Helvetica", 10), fg="gray")
+        self.label_info.pack(pady=(0, 20))  
 
     def sumar(self):
         self.contador += 1
