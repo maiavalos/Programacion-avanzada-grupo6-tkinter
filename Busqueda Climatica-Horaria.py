@@ -110,7 +110,7 @@ buscar_ciudad.place(relx=0.5, rely=0.11, width=300, height=30, anchor="center")
 buscar_ciudad.focus()
 
 
-# """ LUPA barra busqueda """
+# """ Botón Buscar """
 obtener_clima = Button(ventana, text="Buscar", bg="pink", cursor="hand2", command=lambda:clima_App(buscar_ciudad.get()))
 obtener_clima.place(relx=0.68, rely=0.11, width=50, height=30, anchor="center")
 
