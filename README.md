@@ -1,6 +1,6 @@
 # 🌟 Proyecto Introducción a Tkinter en Python 🌟
 
-#     Desarrollando Interfaces Gráficas de Usuario: 
+# #    Desarrollando Interfaces Gráficas de Usuario: 
 
 ## 👥 Integrantes del Grupo
 - Avalos
@@ -20,7 +20,7 @@ Tkinter es la biblioteca estándar de Python para crear interfaces gráficas de 
 
 
 
-## 📂 Este trabajo de investigacion , consta de tres Proyecto con fines didacticos :
+### 📂 Este trabajo de investigacion , consta de tres Proyecto con fines didacticos :
 
 1. **Inventario**
 2. **Búsqueda Climatica**
