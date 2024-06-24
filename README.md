@@ -19,7 +19,7 @@ Tkinter es la biblioteca estándar de Python para crear interfaces gráficas de 
 - Euler
 
 
-### 📂 Este trabajo de investigacion , consta de tres Proyecto con fines didacticos :
+### 📂📚 Proyectos Didácticos :
 
 1. **Inventario**
 2. **Búsqueda Climatica**
