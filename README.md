@@ -22,7 +22,7 @@ Tkinter es la biblioteca estándar de Python para crear interfaces gráficas de 
 
 ## 📂 Este trabajo de investigacion , consta de tres Proyecto con fines didacticos :
 
-1. **inventario**
+1. **Inventario**
 2. **Búsqueda Climatica**
 3. **Gestión Academica**
 
