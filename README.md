@@ -1,4 +1,4 @@
-# 🌟 Proyecto Introducción a Tkinter en Python 🌟
+# 🌟 Proyecto Tkinter en Python 🌟
 
 
 
