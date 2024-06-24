@@ -1,4 +1,4 @@
-# 🌟 Proyecto Tkinter en Python 🌟
+# 🌟 Grupo Tkinter en Python 🌟
 
 
 
