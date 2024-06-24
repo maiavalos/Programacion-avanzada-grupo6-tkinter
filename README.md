@@ -1,6 +1,6 @@
 # 🌟 Proyecto Introducción a Tkinter en Python 🌟
 
-#     Desarrollando Interfaces Gráficas de Usuario 
+#     Desarrollando Interfaces Gráficas de Usuario: 
 
 ## 👥 Integrantes del Grupo
 - Avalos
