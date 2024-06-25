@@ -1,5 +1,6 @@
 # 🌟 Grupo Tkinter en Python 🌟
-
+## UNaB: Universidad Nacional Guillermo Brown
+### Programación Avanzada / Prof. Felipe Morales
 
 
 ## 🐍 Introducción a Tkinter
