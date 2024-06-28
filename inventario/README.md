@@ -8,6 +8,7 @@ Este proyecto implementa un sistema de gestión de inventario simple utilizando 
 
 ## Instalación y Ejecución
 1-descargar la carpeta inventario
+
 2-Ejecutar la aplicación .exe
 
 ## Funcionalidades
