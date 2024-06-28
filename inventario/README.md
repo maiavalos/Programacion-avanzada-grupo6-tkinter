@@ -1,17 +1,16 @@
-Sistema de Inventario con Tkinter
+# Sistema de Inventario con Tkinter
 
-Este proyecto implementa un sistema de gestión de inventario simple utilizando Python y Tkinter para la interfaz gráfica de usuario (GUI).
-Perfecto para comercios chiquitos, o para situaciones donde se requiera un inventario simple.
+Este proyecto implementa un sistema de gestión de inventario simple utilizando Python y Tkinter para la interfaz gráfica de usuario (GUI). Es ideal para pequeños comercios o situaciones donde se requiera un inventario básico y fácil de manejar.
 
-Requisitos
-Python 3.x instalado.
-Biblioteca Tkinter incluida en la instalación estándar de Python.
+## Requisitos
+- Python 3.x instalado.
+- Biblioteca Tkinter incluida en la instalación estándar de Python.
 
-Instalación y Ejecución
+## Instalación y Ejecución
 1-descargar la carpeta inventario
 2-Ejecutar la aplicación .exe
 
-Funcionalidades
+## Funcionalidades
 La aplicación permite realizar las siguientes operaciones:
 
 Agregar Producto: Permite añadir un nuevo producto al inventario especificando nombre y cantidad.
@@ -21,7 +20,7 @@ Buscar Producto: Permite buscar un producto en el inventario por su nombre.
 Mostrar Inventario: Muestra todos los productos actuales en el inventario y además, los separa en los productos con menos de 5 y con mas de 5 unidades.
 Cada funcionalidad está implementada en pestañas separadas dentro de la interfaz de usuario para una mejor organización y navegación.
 
-Estructura del Proyecto
+## Estructura del Proyecto
 El proyecto está organizado en los siguientes archivos principales:
 main.py: Punto de entrada del programa. Inicializa la aplicación Tkinter y la instancia de InventoryApp.
 gui.py: Define la clase InventoryApp que construye la interfaz gráfica utilizando Tkinter y maneja los eventos de los botones y entradas.
