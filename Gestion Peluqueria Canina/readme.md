@@ -2,7 +2,7 @@
 
 Bienvenido a Pulgas Glam, el sistema de gestión para peluquerías caninas. Esta aplicación permite programar citas, gestionar clientes y servicios de manera eficiente.
 
-![Pulgas Glam](https://via.placeholder.com/1000x200?text=Pulgas+Glam+-+Sistema+de+Gestión+de+Peluquería+Canina)
+![Pulgas Glam](https://via.placeholder.com/1000x100?text=Pulgas+Glam+-+Sistema+de+Gestión+de+Peluquería+Canina)
 
 ## Índice
 
@@ -86,7 +86,11 @@ Pulgas Glam es un sistema de gestión desarrollado en Python utilizando la bibli
 
 
 
-## Alumnos: Avalos, Pérez Veltri, Euler.
+## Alumnos
+
+- **Avalos**
+- **Pérez Veltri**
+- **Euler**
 
 ---
 
