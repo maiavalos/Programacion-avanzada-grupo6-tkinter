@@ -1,4 +1,4 @@
-# 🐾 Pulgas Glam - Sistema de Gestión de Peluquería Canina 🐾
+# 🐾 UNaB /  Sistema de Gestión de Peluquería Canina 🐾
 
 Bienvenido a Pulgas Glam, el sistema de gestión para peluquerías caninas. Esta aplicación permite programar citas, gestionar clientes y servicios de manera eficiente.
 
