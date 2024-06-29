@@ -31,7 +31,7 @@ Pulgas Glam es un sistema de gestión desarrollado en Python utilizando la bibli
 3. Ejecuta el archivo principal de la aplicación:
 
     ```sh
-    python pulgas_glam.py
+    python Sistema - Gestión de Peluquería Canina.py
     ```
 
 ## Estructura del Proyecto
