@@ -12,7 +12,7 @@ Bienvenido a Pulgas Glam, el sistema de gestión para peluquerías caninas. Esta
 - [Descripción de Funcionalidades](#descripción-de-funcionalidades)
 - [Guía de Uso](#guía-de-uso)
 - [Alumnos](#alumnos)
-- [Acerca de](#acerca-de)
+  
 
 ## Introducción
 
