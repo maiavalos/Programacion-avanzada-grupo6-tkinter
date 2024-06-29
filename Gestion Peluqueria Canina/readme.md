@@ -24,7 +24,7 @@ Pulgas Glam es un sistema de gestión desarrollado en Python utilizando la bibli
 2. Clona este repositorio o descarga el archivo ZIP:
 
     ```sh
-    git clone https://github.com/tu-usuario/pulgas-glam.git
+    git clone https://github.com/maiavalos/Programaci-n-avanzada-grupo-tkinter.git
     cd pulgas-glam
     ```
 
