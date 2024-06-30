@@ -21,7 +21,7 @@ Este proyecto está diseñado para gestionar de manera eficiente un inventario, 
 2. Clona este repositorio o descarga el archivo ZIP:
 
     ```sh
-    git clone [https://github.com/tu_usuario/tu_repositorio.git](https://github.com/maiavalos/Programacion-avanzada-grupo6-tkinter.git)
+    git clone https://github.com/maiavalos/Programacion-avanzada-grupo6-tkinter.git
     cd inventario
     ```
 
