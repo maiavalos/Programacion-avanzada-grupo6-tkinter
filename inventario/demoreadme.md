@@ -10,7 +10,7 @@ Bienvenido al Sistema de Inventario con Tkinter, una aplicación para la gestió
 - [Instalación](#instalación)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Funcionalidades](#funcionalidades)
-
+- [Alumnos](#alumnos)
 ## Introducción
 
 Este proyecto está diseñado para gestionar de manera eficiente un inventario, proporcionando herramientas para agregar, modificar, eliminar, buscar y mostrar productos de forma organizada y accesible.
@@ -51,6 +51,14 @@ Este proyecto está diseñado para gestionar de manera eficiente un inventario, 
 
 La aplicación organiza estas funcionalidades en pestañas separadas dentro de la interfaz de usuario, facilitando la navegación y la gestión de datos.
 
+
+## Alumnos
+
+- **Avalos**
+- **Pérez Veltri**
+- **Euler**
+
 ---
+
 
 ¡Gracias por usar el Sistema de Inventario con Tkinter! Esperamos que te sea útil para gestionar tus productos de manera eficiente. 📦✨
