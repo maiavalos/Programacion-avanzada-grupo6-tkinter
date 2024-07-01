@@ -2,66 +2,71 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
 
-# Datos de ejemplo
-citas = []
-clientes = {}
-servicios = {"Corte de Pelo": 7500.0, "Baño": 2000.0, "Corte de Uñas": 1500.0}
+class Servicio:
+    def __init__(self, nombre, precio):
+        self.nombre = nombre
+        self.precio = precio
 
-# Funciones
-def programar_cita():
-    # Obtener los valores ingresados por el usuario en los campos de entrada
-    nombre_cliente = entrada_nombre_cliente.get()
-    tipo_servicio = entrada_tipo_servicio.get()
-    fecha_cita = entrada_fecha_cita.get()
+class Cliente:
+    def __init__(self, nombre):
+        self.nombre = nombre
 
-    # Verificar que todos los campos estén llenos
-    if nombre_cliente and tipo_servicio and fecha_cita:
-        # Agregar la cita a la lista de citas
-        citas.append({"nombre_cliente": nombre_cliente, "tipo_servicio": tipo_servicio, "fecha_cita": fecha_cita})
-        # Mostrar mensaje de confirmación
-        messagebox.showinfo("Cita Programada", f"Cita programada para {nombre_cliente}")
-    else:
-        # Mostrar mensaje de error si algún campo está vacío
-        messagebox.showerror("Error", "Todos los campos son obligatorios")
+class Cita:
+    def __init__(self, cliente, servicio, fecha):
+        self.cliente = cliente
+        self.servicio = servicio
+        self.fecha = fecha
 
-def ver_citas():
-    # Crear una nueva ventana para mostrar las citas programadas
-    ventana_citas = tk.Toplevel(root)
-    ventana_citas.title("Citas Programadas")
-
-    # Crear una lista para mostrar las citas
-    lista_citas = tk.Listbox(ventana_citas)
-    lista_citas.pack(fill=tk.BOTH, expand=True)
+class SistemaGestion:
+    def __init__(self):
+        self.citas = []
+        self.clientes = {}
+        self.servicios = {"Corte de Pelo": Servicio("Corte de Pelo", 7500.0), 
+                          "Baño": Servicio("Baño", 2000.0), 
+                          "Corte de Uñas": Servicio("Corte de Uñas", 1500.0)}
     
-    # Recorrer la lista de citas y agregarlas a la lista visual
-    for cita in citas:
-        lista_citas.insert(tk.END, f"Cliente: {cita['nombre_cliente']}, Servicio: {cita['tipo_servicio']}, Fecha: {cita['fecha_cita']}")
-
-def gestionar_clientes():
-    # Crear una nueva ventana para la gestión de clientes
-    ventana_clientes = tk.Toplevel(root)
-    ventana_clientes.title("Gestión de Clientes")
-
-    # Crear una lista para mostrar los clientes
-    lista_clientes = tk.Listbox(ventana_clientes)
-    lista_clientes.pack(fill=tk.BOTH, expand=True)
+    def programar_cita(self, nombre_cliente, tipo_servicio, fecha_cita):
+        if nombre_cliente and tipo_servicio and fecha_cita:
+            cliente = self.clientes.get(nombre_cliente, Cliente(nombre_cliente))
+            servicio = self.servicios.get(tipo_servicio, None)
+            if servicio:
+                cita = Cita(cliente, servicio, fecha_cita)
+                self.citas.append(cita)
+                messagebox.showinfo("Cita Programada", f"Cita programada para {cliente.nombre}")
+            else:
+                messagebox.showerror("Error", "Servicio no encontrado")
+        else:
+            messagebox.showerror("Error", "Todos los campos son obligatorios")
     
-    # Recorrer el diccionario de clientes y agregarlos a la lista visual
-    for cliente, detalles in clientes.items():
-        lista_clientes.insert(tk.END, f"Nombre: {cliente}, Detalles: {detalles}")
-
-def gestionar_servicios():
-    # Crear una nueva ventana para la gestión de servicios
-    ventana_servicios = tk.Toplevel(root)
-    ventana_servicios.title("Gestión de Servicios")
-
-    # Crear una lista para mostrar los servicios
-    lista_servicios = tk.Listbox(ventana_servicios)
-    lista_servicios.pack(fill=tk.BOTH, expand=True)
+    def ver_citas(self):
+        ventana_citas = tk.Toplevel(root)
+        ventana_citas.title("Citas Programadas")
+        lista_citas = tk.Listbox(ventana_citas)
+        lista_citas.pack(fill=tk.BOTH, expand=True)
+        
+        for cita in self.citas:
+            lista_citas.insert(tk.END, f"Cliente: {cita.cliente.nombre}, Servicio: {cita.servicio.nombre}, Fecha: {cita.fecha}")
     
-    # Recorrer el diccionario de servicios y agregarlos a la lista visual
-    for servicio, precio in servicios.items():
-        lista_servicios.insert(tk.END, f"Servicio: {servicio}, Precio: ${precio}")
+    def gestionar_clientes(self):
+        ventana_clientes = tk.Toplevel(root)
+        ventana_clientes.title("Gestión de Clientes")
+        lista_clientes = tk.Listbox(ventana_clientes)
+        lista_clientes.pack(fill=tk.BOTH, expand=True)
+        
+        for cliente in self.clientes.values():
+            lista_clientes.insert(tk.END, f"Nombre: {cliente.nombre}")
+
+    def gestionar_servicios(self):
+        ventana_servicios = tk.Toplevel(root)
+        ventana_servicios.title("Gestión de Servicios")
+        lista_servicios = tk.Listbox(ventana_servicios)
+        lista_servicios.pack(fill=tk.BOTH, expand=True)
+        
+        for servicio in self.servicios.values():
+            lista_servicios.insert(tk.END, f"Servicio: {servicio.nombre}, Precio: ${servicio.precio}")
+
+# Crear una instancia del sistema de gestión
+sistema_gestion = SistemaGestion()
 
 # Interfaz de Usuario
 root = tk.Tk()
@@ -114,21 +119,21 @@ entrada_fecha_cita = tk.Entry(marco_cita)
 entrada_fecha_cita.grid(row=2, column=1, padx=5, pady=5)
 
 # Botón para programar la cita
-tk.Button(marco_cita, text="Programar Cita", command=programar_cita).grid(row=3, column=0, columnspan=2, pady=10)
+tk.Button(marco_cita, text="Programar Cita", command=lambda: sistema_gestion.programar_cita(entrada_nombre_cliente.get(), entrada_tipo_servicio.get(), entrada_fecha_cita.get())).grid(row=3, column=0, columnspan=2, pady=10)
 
 # Botón para ver citas programadas
-tk.Button(root, text="Ver Citas Programadas", command=ver_citas).grid(row=2, column=0, padx=10, pady=5, sticky="ew")
+tk.Button(root, text="Ver Citas Programadas", command=sistema_gestion.ver_citas).grid(row=2, column=0, padx=10, pady=5, sticky="ew")
 
 # Botón para gestionar clientes
-tk.Button(root, text="Gestión de Clientes", command=gestionar_clientes).grid(row=3, column=0, padx=10, pady=5, sticky="ew")
+tk.Button(root, text="Gestión de Clientes", command=sistema_gestion.gestionar_clientes).grid(row=3, column=0, padx=10, pady=5, sticky="ew")
 
 # Botón para gestionar servicios
-tk.Button(root, text="Gestión de Servicios", command=gestionar_servicios).grid(row=4, column=0, padx=10, pady=5, sticky="ew")
+tk.Button(root, text="Gestión de Servicios", command=sistema_gestion.gestionar_servicios).grid(row=4, column=0, padx=10, pady=5, sticky="ew")
 
 # Pie de página con información del curso y los alumnos
 frame_copy = tk.Frame(root)
 frame_copy.grid(row=5, column=0, padx=10, pady=10, sticky="ew")
-etiqueta_copy = tk.Label(frame_copy, text=" Prog. Avanzada / Prof. Felipe Morales / Alumnos: Avalos - Pérez Veltri - Euler ")
+etiqueta_copy = tk.Label(frame_copy, text="Prog. Avanzada / Prof. Felipe Morales / Alumnos: Avalos - Pérez Veltri - Euler")
 etiqueta_copy.grid(row=0, column=0, sticky="e")
 
 # Iniciar el bucle principal de la aplicación
