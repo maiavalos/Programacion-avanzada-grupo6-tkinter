@@ -22,7 +22,7 @@ Tkinter es la biblioteca estándar de Python para crear interfaces gráficas de 
 1. **Inventario**
 2. **Búsqueda Climatica**
 3. **Gestión de Peluquería Canina**
-4. **Video Instructivo - link video**
+4. **Video Instructivo - https://www.youtube.com/watch?v=9xGZ-7E5seQ**
 5. **PPT Proyecto_Tkinter.pdf**   
 ## 🛠️ Requisitos del Sistema
 - Python 3
