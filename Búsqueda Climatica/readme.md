@@ -10,7 +10,6 @@
 - [Descripción del Proyecto](#descripción-del-proyecto)
 - [Descripción de Funcionalidades](#descripción-de-funcionalidades)
 - [Guía de Uso](#guía-de-uso)
-- [Contribuciones](#contribuciones)
 - [Alumnos](#alumnos)
 
 ## Introducción
