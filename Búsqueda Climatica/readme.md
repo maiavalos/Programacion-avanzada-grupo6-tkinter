@@ -1,4 +1,5 @@
-# 📚 UNaB / Búsqueda Climática y Horaria Mundial📚
+# ☁️🕒 UNaB / Búsqueda Climática y Horaria Mundial ☁️🕒
+
 
 ![UNaB](https://via.placeholder.com/1000x200/26aaa0/000000?text=B%C3%BAsqueda+Clim%C3%A1tica+y+Horaria+Mundial)
 
@@ -14,7 +15,7 @@
 
 ## Introducción
 
-Este sistema de gestión universitaria está desarrollado en Python utilizando la biblioteca `tkinter` para la interfaz gráfica de usuario. La aplicación permite gestionar la información de los estudiantes de manera eficiente, proporcionando una interfaz intuitiva para la entrada y visualización de datos.
+Esta aplicación permite consultar el clima y la hora local de cualquier lugar del mundo utilizando la API de OpenWeatherMap. La interfaz gráfica de usuario está desarrollada en Python utilizando la biblioteca `tkinter`.
 
 ## Instalación
 
@@ -36,9 +37,9 @@ Este sistema de gestión universitaria está desarrollado en Python utilizando l
 
 A través de este servicio podremos acceder fácilmente tanto al clima como la hora actual de cada Continente, País, Provincia, Ciudad, etc... que nosotros queramos conocer.
 #### Podremos obtener los siguientes resultados:
- - Temperatura actual del lugar en °C .
- - Descripción del clima actual del lugar.
- - Hora actual del lugar.
+- 🌡️ Temperatura actual del lugar en °C.
+- 🌦️ Descripción del clima actual del lugar.
+- 🕒 Hora actual del lugar.
 
 
 ## Descripción de Funcionalidades
@@ -72,4 +73,5 @@ A través de este servicio podremos acceder fácilmente tanto al clima como la h
 
 ---
 
-¡Gracias por usar Búsqueda del Clima y Hora Mundial! 📚✨
+¡Gracias por usar Búsqueda Climática y Horaria Mundial! ☁️🕒✨
+
