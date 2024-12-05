@@ -20,4 +20,3 @@ No se requiere instalación adicional ya que `tkinter` viene preinstalado con Py
     - ➖ **-**: Decrementa el contador en 1.
     - 🔄 **Reiniciar**: Reinicia el contador a 0.
 
-*
